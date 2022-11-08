@@ -2,7 +2,7 @@ terraform {
   required_version = "= 1.2.8"
 
   backend "s3" {
-    bucket         = "detect-terraform-trackit"
+    bucket         = "your-bucket"
     key            = "terraform.state"
     region         = "eu-west-2"
     dynamodb_table = "detect-terraform-lock"
